@@ -1,16 +1,23 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+@using Blazor.Shared
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="logo"><NavLink href="/" Match="NavLinkMatch.All">Moment1.1 - Razor</NavLink></div>
+
+            <Date />
         </div>
+    </nav>
+</header>
+<div class="container">
+    <NavMenu />
 
-        <article class="content px-4">
-            @Body
-        </article>
+    <main role="main" class="pb-3">
+        @Body
     </main>
 </div>
+
+<footer class="border-top footer text-muted">
+    Av Xiehui - Kontakt mig via e-post: <a href="mailto:maoxiehui@outlook.com">maoxiehui@outlook.com</a>
+</footer>

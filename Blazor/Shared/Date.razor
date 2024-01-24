@@ -1,0 +1,14 @@
+<div class="date">Dagens datum är: @currentDate</div>
+
+@code {
+    private string currentDate;
+
+    protected override void OnInitialized()
+    {
+        // Get the current date
+        var currentDateObject = DateTime.Now;
+
+        // Format the date as xxxx-xx-xx
+        currentDate = currentDateObject.ToString("yyyy-MM-dd");
+    }
+}
