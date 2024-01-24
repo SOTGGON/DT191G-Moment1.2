@@ -19,53 +19,92 @@ h4 {
     margin-bottom: 1rem;
 }
 
-header .container{
+header .container {
     max-width: 500px;
     width: 100% !important;
     height: 100px;
-  }
-  
-  a.navbar-brand {
+}
+
+a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
-    
-  }
-  
-  a {
+
+}
+
+a {
     color: #0077cc;
-  }
-  
-  .border-top {
+}
+
+.border-top {
     border-top: 1px solid #e5e5e5;
-  }
-  .border-bottom {
+}
+
+.border-bottom {
     border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .box-shadow {
+}
+
+.box-shadow {
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-  }
-  
-  button.accept-policy {
+}
+
+button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
-  }
-  
-  .footer {
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.header {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 1rem; 
+}
+
+.logo a {
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 2rem; 
+    font-weight: bold; 
+}
+
+.logo a:hover {
+    color: #0056b3; 
+}
+
+
+/* Footer */
+.footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     white-space: nowrap;
     line-height: 60px;
     text-align: center;
-  }
-  
-  .container {
+}
+
+/* Navigation */
+.container {
     display: flex;
-  }
-  
-  .container nav {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container nav {
+    box-sizing: border-box;
     width: 25%;
     margin: 1rem 0.5rem 1rem 1rem;
     min-height: 500px;
@@ -73,55 +112,132 @@ header .container{
     border-radius: 5px;
     padding: 1rem;
     overflow-y: auto;
-  }
-  
-  .container nav ul {  
-    
+}
+
+.container nav ul {
+
     list-style: none;
     padding: 0;
-  }
-  
-  .container nav li {
+}
+
+.container nav li {
     background-color: #f8f9fa;
     text-align: center;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     border: 3px solid rgb(87, 87, 87);
     border-radius: 5px;
-  }
-  
-  .container nav a {
+}
+
+.container nav a {
     text-decoration: none;
     display: block;
     padding: 0.5rem;
     color: #343a40;
     transition: background-color 0.3s ease;
-  }
-  
-  .container nav li:hover {
+}
+
+.container nav li:hover {
     background-color: #007bff;
     color: #fff;
-  }
-  
-  .container main {
+}
+
+.container main {
+    box-sizing: border-box;
     width: 75%;
     margin: 1rem 1rem 1rem 0.5rem;
     border: 3px solid rgb(87, 87, 87);
     border-radius: 5px;
-  }
-  
-  @media (max-width: 600px) {
+}
+
+
+/* Konverterings del */
+.text-left {
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    width: 20%;
+    min-width: 150px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 0.5rem;
+}
+
+/* Jsons del */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+
+@media (max-width: 1000px) {
     .container {
-      flex-direction: column;
+        width: 98%;
     }
-  
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
     .container nav {
-      width: 100%;
-      margin: 0;
-      min-height: 0;
+        width: 100%;
+        margin: 0;
+        min-height: 0;
     }
-  
+
     .container main {
-      width: 100%;
-      margin: 1rem 0;
+        width: 100%;
+        margin: 1rem 0;
     }
-  }
+}
